@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="tracking_control" type="path_planning" name="path_planning" output="screen">
+        <param name="x_start" value="0.0"/>
+        <param name="y_start" value="-0.25"/>
+        <param name="trajectory_type" value="line"/><!--choose the trajectory type default:line,wave1,wave2-->
+        <!--If you need to add a custom path, please see trajectory.h-->
+        <param name="limit_x" value="4.0"/>
+        <param name="limit_y" value="0.0"/>
+    </node>
+
+</launch>
